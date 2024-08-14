@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "523677388929",
+    "firebase_url": "https://egrocer-9fce4-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "egrocer-9fce4",
+    "storage_bucket": "egrocer-9fce4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523677388929:android:580e2b654cae2840d77d80",
+        "android_client_info": {
+          "package_name": "com.wrteam.egrocer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "523677388929-lmc70jcs5ffcu0up62nqfmh8bh9g0qae.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wrteam.egrocer",
+            "certificate_hash": "bde2919c78d7958ba2789593991dcc7759f266a0"
+          }
+        },
+        {
+          "client_id": "523677388929-3l1l9937p60r65k8kqu2879cvive5ca6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbUK-p4FIPcFVbUBVgryPGywLZGxYMr_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "523677388929-3l1l9937p60r65k8kqu2879cvive5ca6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
