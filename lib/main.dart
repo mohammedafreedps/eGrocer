@@ -1,4 +1,6 @@
 import 'package:egrocer/helper/utils/generalImports.dart';
+import 'package:egrocer/provider/farm_location_provider.dart';
+import 'package:egrocer/provider/weather_provider.dart';
 
 late final SharedPreferences prefs;
 
@@ -92,6 +94,12 @@ Future<void> main() async {
             return AppSettingsProvider();
           },
         ),
+        ChangeNotifierProvider<WeatherProvider>(create: (context) {
+          return WeatherProvider();
+        }),
+        ChangeNotifierProvider<FarmLocationProvider>(create: (context) {
+          return FarmLocationProvider();
+        }),
       ],
       child: MyApp(),
     ),

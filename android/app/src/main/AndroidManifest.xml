@@ -42,7 +42,7 @@
         <!--TODO REPLACE ANDROID KEY HERE-->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="MAP_API_KEY_HERE" />
+            android:value="AIzaSyBzEyNIdAeLHWWGgSHwllEqS0YuN_FK87w" />
 
         <activity
             android:name=".HomeMainScreen"

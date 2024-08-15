@@ -12,6 +12,8 @@ class Constant {
 
   static String baseUrl = "${hostUrl}customer/";
 
+  static String openWeatherBaseUrl = 'https://api.openweathermap.org/data/2.5/weather';
+
   static String packageName = "com.wrteam.egrocer";
 
   // TODO IOS APP URL HERE

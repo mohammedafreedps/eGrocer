@@ -1,4 +1,5 @@
 import 'package:egrocer/helper/utils/generalImports.dart';
+import 'package:egrocer/provider/weather_provider.dart';
 
 class HomeScreen extends StatefulWidget {
   final ScrollController scrollController;
@@ -15,6 +16,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
+    context.read<WeatherProvider>().fechOpenWeather();
     super.initState();
     //fetch productList from api
     Future.delayed(Duration.zero).then(
@@ -81,6 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     .read<HomeScreenProvider>()
                     .getHomeScreenApiProvider(context: context, params: params);
               },
+              //
               child: SingleChildScrollView(
                 controller: widget.scrollController,
                 child: Consumer<HomeScreenProvider>(
@@ -99,11 +102,12 @@ class _HomeScreenState extends State<HomeScreen> {
                           context,
                         );
                       }
+                      //
                       return Column(
                         children: [
                           //top offer images
                           if (map.containsKey("top"))
-                            getOfferImages(map["top"]!.toList(), context),
+                            getOfferImages(map["top"]!.toList(), context,needWeatherDetail: true),
                           ChangeNotifierProvider<SliderImagesProvider>(
                             create: (context) => SliderImagesProvider(),
                             child: SliderImageWidget(
@@ -115,7 +119,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           //below slider offer images
                           if (map.containsKey("below_slider"))
                             getOfferImages(
-                                map["below_slider"]!.toList(), context),
+                                map["below_slider"]!.toList(), context,needStartButton: true),
                           if (homeScreenProvider.homeScreenData.categories !=
                                   null &&
                               homeScreenProvider

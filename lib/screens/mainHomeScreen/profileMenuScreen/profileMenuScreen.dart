@@ -66,6 +66,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 fontColor: ColorsRes.appColorRed,
                 iconColor: ColorsRes.appColorRed,
               ),
+              Text('Hello ')
             ],
           );
         },

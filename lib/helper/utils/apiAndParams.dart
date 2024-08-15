@@ -193,4 +193,7 @@ class ApiAndParams {
   static String rate = "rate";
   static String review = "review";
   static String deleteImageIds = "deleteImageIds";
+
+  //openWeather API
+  static String openWeatherApi = 'dec348b6fa33f678982fa0fe6a824de4';
 }
