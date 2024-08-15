@@ -1,5 +1,5 @@
 import 'package:egrocer/helper/utils/generalImports.dart';
-import 'package:egrocer/provider/weather_provider.dart';
+import 'package:egrocer/provider/weatherProvider.dart';
 import 'package:egrocer/screens/mainHomeScreen/homeScreen/widget/weatherSelector.dart';
 
 Widget weatherDisplay(BuildContext context) {
@@ -18,13 +18,18 @@ Widget weatherDisplay(BuildContext context) {
                 Text(context.watch<WeatherProvider>().weather?.cityName ?? '',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15,color: ColorsRes.appColorGreen),),
                 Text(context.watch<WeatherProvider>().weather?.mainCondition ?? 
                     '',style: TextStyle(fontSize: 12,color: ColorsRes.appColorGreen),),
-                Text(context
-                        .watch<WeatherProvider>()
-                        .weather
-                        ?.temperature
-                        .round()
-                        .toString() ??
-                    '',style: TextStyle(fontSize: 12,color: ColorsRes.appColorGreen),),
+                Row(
+                  children: [
+                    Text(context
+                            .watch<WeatherProvider>()
+                            .weather
+                            ?.temperature
+                            .round()
+                            .toString() ??
+                        '',style: TextStyle(fontSize: 12,color: ColorsRes.appColorGreen),),
+                   Text(' °C',style: TextStyle(fontSize: 12,color: ColorsRes.appColorGreen),)
+                  ],
+                ),
               ],
             ),
             weatherSelector(context.watch<WeatherProvider>().weather?.mainCondition ?? '')

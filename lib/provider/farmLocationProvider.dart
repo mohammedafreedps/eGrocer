@@ -1,5 +1,5 @@
 import 'package:egrocer/helper/utils/generalImports.dart';
-import 'package:egrocer/helper/utils/time_date_formator.dart';
+import 'package:egrocer/helper/utils/timeDateFormator.dart';
 
 class FarmLocationProvider extends ChangeNotifier {
   late GoogleMapController gMapController;

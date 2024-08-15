@@ -1,4 +1,5 @@
 import 'package:egrocer/helper/utils/generalImports.dart';
+import 'package:egrocer/screens/labReportScreen/labReportScreen.dart';
 
 class ProfileScreen extends StatefulWidget {
   final ScrollController scrollController;
@@ -66,7 +67,35 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 fontColor: ColorsRes.appColorRed,
                 iconColor: ColorsRes.appColorRed,
               ),
-              Text('Hello ')
+              InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (_)=>Labreportscreen()));
+                },
+                child: Container(
+                  decoration:
+                      DesignConfig.boxDecoration(Theme.of(context).cardColor, 5),
+                  padding: EdgeInsetsDirectional.symmetric(horizontal: 10, vertical: 10),
+                  margin: EdgeInsetsDirectional.only(
+                    start: 10,
+                    end: 10,
+                    bottom: 10,
+                    top:  10,
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Icon(Icons.library_books_outlined,color:  ColorsRes.mainTextColor),
+                          SizedBox(width: 13,),
+                          Text('Lab Report',style: TextStyle(fontSize: 19),)
+                        ],
+                      ),
+                      Icon(Icons.arrow_forward_ios_rounded,size: 18,)
+                    ],
+                  ),
+                ),
+              )
             ],
           );
         },

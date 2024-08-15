@@ -1,5 +1,5 @@
 import 'package:egrocer/helper/utils/generalImports.dart';
-import 'package:egrocer/provider/weather_provider.dart';
+import 'package:egrocer/provider/weatherProvider.dart';
 
 class HomeScreen extends StatefulWidget {
   final ScrollController scrollController;

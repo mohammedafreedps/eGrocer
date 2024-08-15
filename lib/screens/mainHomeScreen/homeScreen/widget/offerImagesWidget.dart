@@ -1,5 +1,5 @@
 import 'package:egrocer/helper/utils/generalImports.dart';
-import 'package:egrocer/screens/mainHomeScreen/homeScreen/widget/start_button.dart';
+import 'package:egrocer/screens/mainHomeScreen/homeScreen/widget/startButton.dart';
 import 'package:egrocer/screens/mainHomeScreen/homeScreen/widget/weatherDisplay.dart';
 
 getOfferImages(List<OfferImages>? offerImages, BuildContext context,

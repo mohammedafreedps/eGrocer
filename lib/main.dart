@@ -1,6 +1,6 @@
 import 'package:egrocer/helper/utils/generalImports.dart';
-import 'package:egrocer/provider/farm_location_provider.dart';
-import 'package:egrocer/provider/weather_provider.dart';
+import 'package:egrocer/provider/farmLocationProvider.dart';
+import 'package:egrocer/provider/weatherProvider.dart';
 
 late final SharedPreferences prefs;
 

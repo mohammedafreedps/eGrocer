@@ -1,8 +1,5 @@
-import 'dart:convert';
-import 'package:egrocer/helper/utils/apiAndParams.dart';
-import 'package:egrocer/helper/utils/constant.dart';
 import 'package:egrocer/helper/utils/generalImports.dart';
-import 'package:egrocer/models/weather_model.dart';
+import 'package:egrocer/models/weatherModel.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:http/http.dart' as http ;
 

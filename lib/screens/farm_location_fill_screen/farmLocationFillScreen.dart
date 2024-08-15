@@ -1,7 +1,7 @@
 import 'package:egrocer/helper/styles/colorsRes.dart';
 import 'package:egrocer/helper/utils/generalImports.dart';
-import 'package:egrocer/provider/farm_location_provider.dart';
-import 'package:egrocer/repositories/open_weather_api._and_service.dart';
+import 'package:egrocer/provider/farmLocationProvider.dart';
+import 'package:egrocer/repositories/openWeatherApiAndService.dart';
 import 'package:flutter/material.dart';
 
 class FarmLocationFillScreen extends StatelessWidget {
